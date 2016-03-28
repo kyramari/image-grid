@@ -16,13 +16,17 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 img {
   float: left;
   display: block;
   width: 100%;
 }
 
-img:first-child(2) {
+img:nth-child(2) {
   display: none;
 }
 
@@ -49,16 +53,16 @@ img:first-child(2) {
 @media only screen and (min-width: 38em) {
 
   img:nth-child(2) {
-    max-width: 33.333%;
+    max-width: 33.3333%;
     display: block;
   }
 
   img:nth-child(3) {
-    max-width: 33.333%;
+    max-width: 33.3333%;
   }
 
   img:nth-child(4) {
-    max-width: 33.333%;
+    max-width: 33.3333%;
   }
 
   img:nth-child(5) {
@@ -69,12 +73,12 @@ img:first-child(2) {
 @media only screen and (min-width: 60em) {
 
   img:first-child {
-    width: 66.666%;
+    width: 66.6666%;
   }
 
   img:nth-child(5) {
     display: block;
-    width: 33.333%;
+    width: 33.3333%;
   }
 
   img:nth-child(2) {
