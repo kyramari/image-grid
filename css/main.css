@@ -22,10 +22,15 @@ img {
   width: 100%;
 }
 
+img:first-child(2) {
+  display: none;
+}
+
 @media only screen and (min-width: 25em) {
 
   img:nth-child(2) {
     max-width: 50%;
+    display: block;
   }
 
   img:nth-child(3) {
@@ -41,10 +46,11 @@ img {
   }
 }
 
-@media only screen and (min-width: 39em) {
+@media only screen and (min-width: 38em) {
 
   img:nth-child(2) {
     max-width: 33.333%;
+    display: block;
   }
 
   img:nth-child(3) {
@@ -69,5 +75,9 @@ img {
   img:nth-child(5) {
     display: block;
     width: 33.333%;
+  }
+
+  img:nth-child(2) {
+    display: block;
   }
 }
